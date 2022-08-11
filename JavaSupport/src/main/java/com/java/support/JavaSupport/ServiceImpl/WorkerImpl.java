@@ -17,6 +17,8 @@ public class WorkerImpl implements Worker {
 
 	public List<EmployeeModel> getWorkerDetails() {
 		logger.info("getWorkerDetails entering >>>> ");
+		
+		logger.info("getWorkerDetails entering >>>>>>> ");
 		List<EmployeeModel> response = new ArrayList<EmployeeModel>();
 		EmployeeModel employee = new EmployeeModel();
 		EmployeeModel employee1 = new EmployeeModel();
