@@ -25,7 +25,7 @@ public class WorkerImpl implements Worker {
 		String empId = "EMP12345";
 		if (empId.equals("EMP12345")) {
 			logger.info("Preparng emloye Details >>>>");
-
+			logger.info("Preparng emloye Details >>>>......");
 			employee.setId("EMP1234");
 			employee.setName("Chinni Bukya");
 			employee.setDepartment("IT");
