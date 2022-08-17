@@ -18,10 +18,9 @@ public class JavaManagerImpl implements JavaManager{
 	JavaDAOImpl daoImpl;
 
 	public String getJavaVersion() {
-		
 		logger.info("Entering into JavaManagerImpl layer  :::: ");
-
-		return daoImpl.getJavaVersion();
+		String response=daoImpl.getJavaVersion();
+		return response;
 				
 	}
 

@@ -18,7 +18,8 @@ public class JavaServiceImpl implements JavaService{
 
 	public String getJavaVersion() {
 		logger.info("Entering into JavaServiceImpl layer  :::: ");
-		return managerImpl.getJavaVersion();
+		String response=managerImpl.getJavaVersion();
+		return response;
 	}
 
 }

@@ -17,7 +17,9 @@ public class JavaDAOImpl implements JavaDAO {
 		
 		logger.info("Returning the response from JavaDAOImpl layer  :::: ");
 		
-		return "Java Version 1.8 ::: ";
+		String response="Java Version 1.8 ::: ";
+		
+		return response;
 	}
 
 }
