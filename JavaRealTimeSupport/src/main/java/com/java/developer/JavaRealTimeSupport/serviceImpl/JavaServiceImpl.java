@@ -21,5 +21,5 @@ public class JavaServiceImpl implements JavaService{
 		String response=managerImpl.getJavaVersion();
 		return response;
 	}
-
+	
 }

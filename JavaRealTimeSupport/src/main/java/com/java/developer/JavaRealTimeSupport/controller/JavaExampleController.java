@@ -19,14 +19,16 @@ public class JavaExampleController {
 	
 	
 	@Autowired(required = true)
-	JavaServiceImpl javaServiceImpl;
+	JavaServiceImpl impl=new JavaServiceImpl();
 	
 	@GetMapping(value = "/JavaVersion", produces="application/json")
 	public ResponseEntity<String> getJavaDetails() {
 		logger.info("Entering into JavaExampleController layer  :::: ");
-		String response=javaServiceImpl.getJavaVersion();
-		return new ResponseEntity<String>(response,HttpStatus.OK);
+		String resp=impl.getJavaVersion();
+		return new ResponseEntity<String>(resp,HttpStatus.OK);
 
 	}
 	
 }
+
+
