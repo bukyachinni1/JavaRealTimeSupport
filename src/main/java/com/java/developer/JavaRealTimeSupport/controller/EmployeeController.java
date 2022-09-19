@@ -29,24 +29,12 @@ public class EmployeeController {
 
 	}
 	
-	@GetMapping(value = "/emp/details/list", produces = "application/json")
-	public ResponseEntity<List<EmploeeModelResponse>> emploeeModelResponseList() {
-		List<EmploeeModelResponse> resp = impl.getEmployeeDetailsList();
-		return new ResponseEntity<List<EmploeeModelResponse>>(resp, HttpStatus.OK);
-
-	}
-	
-	@GetMapping(value = "/labour/details/list", produces = "application/json")
-	public ResponseEntity<List<LabourDetails>> labpourResponseList() {
-		List<LabourDetails> resp = impl.getLabourDetailsList();
+	@GetMapping(value = "/labour/details", produces = "application/json")
+	public ResponseEntity<List<LabourDetails>> getLabourList() {
+		List<LabourDetails> resp =impl.getEmployeeDetailsList();
 		return new ResponseEntity<List<LabourDetails>>(resp, HttpStatus.OK);
 
 	}
-	
-	
-	
-	
-	
-	
+
 
 }

@@ -24,27 +24,12 @@ public class EmployeeServiceImpl {
 		return employeeDetails;
 	}
 	
-	
-	
-	
-	public List<EmploeeModelResponse> getEmployeeDetailsList() {
+	public List<LabourDetails> getEmployeeDetailsList() {
 
-		List<EmploeeModelResponse> employeeDetailsList = employeeManagerImpl.getEmployeeDetailsList();
-		return employeeDetailsList;
-	}
-	
-
-	public  List<LabourDetails> getLabourDetailsList() {
-
-		 List<LabourDetails> employeeDetailsList = employeeManagerImpl.getLabourDetailsList();
-		return employeeDetailsList;
+		List<LabourDetails> employeeDetails = employeeManagerImpl.getEmployeeDetailsList();
+		return employeeDetails;
 	}
 	
 	
 	
-	
-	
-	
-	
-
 }
